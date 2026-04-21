@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 years anniversary ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">4 years anniversary ❤️</h1>
+
+    <div class="game-shell">
+      <div class="game-wrapper">
+        <canvas id="game" width="980" height="420"></canvas>
+
+        <div id="startOverlay" class="overlay show">
+          <div class="overlay-box">
+            <h2>Start</h2>
+            <p>Πάτησε για να ξεκινήσει</p>
+          </div>
+        </div>
+
+        <div id="loseOverlay" class="overlay hidden">
+          <div class="overlay-box">
+            <h2>Παίξε ξανά</h2>
+            <p>Ακούμπησες εμπόδιο</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">Εισαί κοντά στο τέλος !</p>
+  </div>
+
+  <!-- full screen fireworks -->
+  <canvas id="fireworksCanvas" class="fireworks hidden"></canvas>
+
+  <div id="winOverlay" class="fullscreen-win hidden">
+    <div class="overlay-box love end-box">
+      <h2>Σ' αγαπώ ❤️</h2>
+      <p class="play-again">Παίξε ξανά</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
