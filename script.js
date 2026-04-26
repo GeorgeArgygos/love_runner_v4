@@ -298,6 +298,22 @@ function handleInput(e) {
 }
 window.addEventListener("keydown", handleInput);
 
+canvas.addEventListener("touchstart", function (e) {
+  e.preventDefault();
+
+  if (gameState === "running" && player.onGround) {
+    player.vy = JUMP_POWER;
+    player.onGround = false;
+  }
+});
+
+canvas.addEventListener("click", function () {
+  if (gameState === "running" && player.onGround) {
+    player.vy = JUMP_POWER;
+    player.onGround = false;
+  }
+});
+
 startOverlay.addEventListener("click", () => {
   if (gameState === "start") startGame();
 });
